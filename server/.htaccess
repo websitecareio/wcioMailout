@@ -1,0 +1,3 @@
+<IfModule security2_module>
+    SecRuleRemoveByTag unoeuro
+</IfModule>
