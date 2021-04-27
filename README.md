@@ -6,9 +6,6 @@ Tired of setting up SMTP plugins on client sites all the time, or have to change
 - WordPress plugin with easy configuration of username / password
 - Standalone code you can inplement on any site
 - PHPMailer integration
-- SendGrid integration
-- Logging of all sent e-mail for debugging purposes
-- Automatic log cleanup (Default 7 days)
 - E-mail validation
 
 ## How to use WordPress plugin
