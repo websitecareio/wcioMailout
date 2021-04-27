@@ -15,10 +15,37 @@
 Lorem ipsum dolor sit amet...
 
 ## How to use Srandalone version
-Lorem ipsum dolor sit amet...
+The standalone version requires you to work a bit. Implementing it into your site where needed. 
+
+Below you can see a simple way to use the standalone version.
 
 ```sh
-example
+<?php
+require("client/standalone/code.php"); // wcioMailout function
+
+// Send mail
+// wcio_mail($to, $from, $subject, $message, $headers)
+
+$headers = "Reply-To: replyto@mail.com";
+
+wcio_mail(
+    "to@mail.com",
+    "from@mail.com",
+    "Mail subject here",
+    "Email content here including HTML",
+    $headers);
+
+?>
+```
+
+## Accepted headers
+The headers part only accepts some type of headers. Here is the full allowed headers. When entering headers a new line is needed for the server part to split it up correctly.
+
+```sh
+From: from@mail.com
+Cc: cc@mail.com
+Bcc: bcc@mail.com
+Reply-to: replyto@mail.com
 ```
 
 ## Requirements
